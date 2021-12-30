@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --int: "Inter";
+  --rig: "Righteous";
+  --urb: "Urbanist";
+}
+
+.header {
+  height: 125px;
+  background: #1C1814;
+  display: flex;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.container-header {
+  max-width: 1350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__left>ul{
+  display: flex;
+}
+
+.header__link{
+  margin-right: 48px;
+  font-family: var(--int);
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  /* border: 1px solid red; */
+  transition: 0.5s linear;
+}
+
+.header__right>ul{
+  display: flex;
+}
+
+.header__link_mr0{
+  margin-right: 0;
+}
+
+.header__link_size22px{
+  font-size: 22px;
+}
+
+.header__link:hover{
+  color: #C99E71;
+}
+
+.menu>i{
+  color: white;
+  font-size: 40px;
+  
+}
+
+#menu:checked ~ .header__left{
+  position: relative;
+}
